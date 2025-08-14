@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="_photo2/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar" id="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="_photo2/library_icon.png" alt="icon" />
+              <a href="#">Your Library </a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">it's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./_photo2/backward_icon.png" alt="icon" />
+            <img src="./_photo2/forward_icon.png" alt="icon" class="hide" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install app
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./_photo2/card1img.jpeg" alt="img" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the played tracks...</p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="card-container">
+          <div class="card" data-song="./adio/Azul.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/dwN39y83DP/N39MqXVX3D/size_m_1754479095.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">AZUL</p>
+            <p class="card-info">Guru Randhawa, Gurjit Gill, Lavish Dhiman</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Pardesiya.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8vKxD5/4W8LZ0a1Wx/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Pardesiya</p>
+            <p class="card-info">Sachin-Jigar, Sonu Nigam,Krishnakali..</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Aavan.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/VdNW0Mbo5e/NW0XAV5QWo/size_m_1753942672.webp"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Aavan Jaavan("WAR2")</p>
+            <p class="card-info">Pritam, Arijit Singh, Nikhita Gandhi</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Saiyaara.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/koMWQ7BKqL/MWQDrEE13q/size_m_1752126465.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Saiyaara</p>
+            <p class="card-info">
+              TanishkBagchi,Faheem Abdullah,Arslan Singh.....
+            </p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Bawaria.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/Rz4W87v3xD/4W8LZGjpWx/size_m_1754298245.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Bawaria (From "Dhadak 2")</p>
+            <p class="card-info">Jubin Nautiyal, Tanishk Bagchi...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Laal Pari.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/w4MKPObojg/MKP84L14Ko/size_m_1747310816.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Laal Pari (From "Housefull 5")</p>
+            <p class="card-info">Yo Yo Honey Singh,Simar Kaur,Alfaaz..</p>
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./_photo2/card5img.jpeg" alt="img" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the played tracks...</p>
+          </div>
+          <div class="card">
+            <img src="./_photo2/card6img.jpeg" alt="img" class="card-img" />
+            <p class="card-title">Top 50 - Hindi</p>
+            <p class="card-info">Your daily updates of the played tracks...</p>
+          </div>
+          <div class="card">
+            <img src="./_photo2/card1img.jpeg" alt="img" class="card-img" />
+            <p class="card-title">Top 50 - Viral</p>
+            <p class="card-info">Your daily updates of the played tracks...</p>
+          </div>
+        </div>
+
+        <h2>Old Hindi song</h2>
+        <div class="card-container">
+          <div class="card" data-song="./adio/Bheegi.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/DwPKOkBKqV/wPKORwkbqV/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Bheegi Bheegi Raaton Mein</p>
+            <p class="card-info">Kishore Kumar,Lata Mangeshkar...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Dekha.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/D0PKLqr3Gl/0PKLnypWGl/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Dekha Ek Khwaab | देखा एक ख्वाब</p>
+            <p class="card-info">Lata Mangeshkar,Kishore Kumar...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Dil To.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/DwPKOxB3qV/wPKOoL6KqV/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Dil To Pagal Hai | दिल तो पागल है</p>
+            <p class="card-info">Uttam Singh,Lata Mangeshkar,Udit...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Ud Ja.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/6Zxb27K9wN/xb2qrjNoW9/size_m_1688020211.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Udd Jaa Kaale Kaava (From "Gadar 2")</p>
+            <p class="card-info">Udit Narayan,Alka Yagnik,Mitho...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Chand.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/BZgWoQOK2d/BZgWoQOK2d/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">
+              Chand Chhupa Badal Mein | चांद छुपा बदल में
+            </p>
+            <p class="card-info">Udit Narayan,Alka Yagnik</p>
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <h2>Trending Bhojpuri song</h2>
+        <div class="card-container">
+          <div class="card" data-song="./adio/Dilwa.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/jBr3gybR1m/r3g9N6zdbR/size_l.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Dilwa Le Ja Rumaal Me</p>
+            <p class="card-info">Pawan Singh</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Aayi.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/song/w4MKPgOboj/MKPN5OB4Wo/size_m_1729063247.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Aayi Nai</p>
+            <p class="card-info">Pawan Singh,Divya Kumar</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Nathuniya.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/4WEyZwaYWP/size_m_1751264271.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Nathuniya 2</p>
+            <p class="card-info">Khesari Lal Yadav</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Lut.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/81l3Me3rMx/l3Mo8oeBbr/size_m_1746781530.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Lut Gayani Pyaar Mai</p>
+            <p class="card-info">Neelkamal Singh,Shubha...</p>
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="card" data-song="./adio/Kamariya.mp3">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/a7LWBzWzXA/LWBLegk4Kz/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Kamariya Round Karega</p>
+            <p class="card-info">Neelkamal Singh,Priyanka Singh,R...</p>
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+
+        <h2>Trending Punjabi song</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/song/Oxd3xP3gVY/d3x5BlQ9Wg/size_m_1537965014.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Morni Banke</p>
+            <p class="card-info">Guru Randhawa,Neha Kakkar</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/song/qa4WEqqWP1/4WERJLrMbP/size_m_1579064287.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Lagdi Lahore Di</p>
+            <p class="card-info">Guru Randhawa,Tulsi Kumar</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/song/10q3Z1K52r/q3ZVzo7A35/size_m_1532438586.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Ishare Tere</p>
+            <p class="card-info">Guru Randhawa,Dhvani Bhanushali</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/NOXWVRgWkq/XWVyMq8R3k/size_m_1743755606.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Sirra</p>
+            <p class="card-info">Guru Randhawa,Kiran Bajwa,Rony Ajnali</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/jBr3gybR1m/r3gerl49bR/size_m_1753879729.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Tauba Tauba (From "Bad News")</p>
+            <p class="card-info">Karan Aujla</p>
+          </div>
+        </div>
+        <h2>Trending Hindi song</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqWP1p/4WEyPxmqWP/size_m_1750701059.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Sapphire</p>
+            <p class="card-info">Ed Sheeran</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/koMWQ7BKqL/MWQDrEE13q/size_m_1752126465.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Saiyaara Reprise - Female</p>
+            <p class="card-info">Tanishk Bagchi,Faheem Abdullah,Ar...</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/DwPKOBbqVZ/PKOkMBlPKq/size_m_1739161054.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Tu Hain Toh Main Hoon</p>
+            <p class="card-info">Tanishk Bagchi,Arijit Singh,Afsan...</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/kGxbn03y4r/xbnLmXjM3y/size_m.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Koi Naa (From "Bhool Chuk Maaf")</p>
+            <p class="card-info">Tanishk Bagchi,Gifty,Harnoor</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://a10.gaanacdn.com/gn_img/song/lJvKa56KDV/vKa91Z1RKD/size_m_1628085090.jpg"
+              alt="img"
+              class="card-img"
+            />
+            <p class="card-title">Raataan Lambiyan</p>
+            <p class="card-info">Jubin Nautiyal,Asees Kaur,Tanishk Ba...</p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/song/lJvKa56KDV/vKa91Z1RKD/size_m_1628085090.jpg"
+            alt="img"
+            class="album-img"
+          />
+          <div>
+            <p>Daylight</p>
+            <p>Arjit singh</p>
+          </div>
+
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-circle-plus"></i>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img
+              src="./_photo2/player_icon1.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <img
+              src="./_photo2/player_icon2.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <img
+              src="./_photo2/player_icon3.png"
+              alt="icon"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img
+              src="./_photo2/player_icon4.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <img
+              src="./_photo2/player_icon5.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <i class="fa-solid fa-arrows-up-down-left-right"></i>
+          <i class="fa-regular fa-arrow-up-right-from-square"></i>
+          <i class="fa-thin fa-arrows-to-eye"></i>
+
+          <i class="fa-solid fa-bars controls-icon"></i>
+
+          <input type="range" />
+          <i
+            class="fa-solid fa-up-right-and-down-left-from-center controls-icon"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <audio id="player" preload="metadata"></audio>
+    <script src="./script.js"></script>
+  </body>
+</html>
