@@ -2,6 +2,13 @@
 
 <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify Logo" width="80"/>
 
+
+## 🔗 Live Demo  
+<a href="https://piyuscoder.github.io/Spotify-Clone/" target="_blank">🎧 Click here to view the Spotify Clone</a>
+
+
+---
+
 ## 📌 About the Project  
 This is a **Spotify Clone** built using **HTML, CSS, and JavaScript**.  
 It allows you to:  
